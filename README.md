@@ -1,6 +1,10 @@
 # UE4ExportDataTableCommandlet
 
-Usage
+## Pre-Requisites
+
+Clone this repository inside your Source Build of Unreal Engine Folder & Re-Compile/Build before use.
+
+## Commandlet Usage
 
 The **`** (backtick) is for running this via PowerShell
 
