@@ -2,7 +2,7 @@
 
 ## Pre-Requisites
 
-Clone this repository and paste the `Engine` Folder inside your **Source Build** of Unreal Engine Folder & Re-Compile/Build before use.
+Clone this repository and paste the `Engine` Folder inside your **Source Build** of Unreal Engine Folder & Build `UE4` sln before use.
 
 ## Commandlet Usage
 
