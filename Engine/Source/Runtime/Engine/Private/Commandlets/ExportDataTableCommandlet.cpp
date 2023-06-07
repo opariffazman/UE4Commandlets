@@ -9,18 +9,22 @@ DEFINE_LOG_CATEGORY_STATIC(ExportDataTableCommandlet, Log, All);
 
 void ExportDataTableToCSV(const FString& DataTableInput, const FString& DataTableOutput)
 {
+#if WITH_EDITOR
 	if (UDataTable* DataTable = LoadObject<UDataTable>(NULL, *DataTableInput))
 	{
 		FFileHelper::SaveStringToFile(DataTable->GetTableAsCSV(), *DataTableOutput);
 	}
+#endif
 }
 
 void ExportDataTableToJson(const FString& DataTableInput, const FString& DataTableOutput)
 {
+#if WITH_EDITOR
 	if (UDataTable* DataTable = LoadObject<UDataTable>(NULL, *DataTableInput))
 	{
 		FFileHelper::SaveStringToFile(DataTable->GetTableAsJSON(), *DataTableOutput);
 	}
+#endif
 }
 
 int32 UExportDataTableCommandlet::Main(const FString& Params)
